@@ -1,0 +1,185 @@
+:root{
+    --vermelho-netflix: #E50914;
+    --texto-principal: #FFFFFF;
+    --botao-hover: #810208;
+    --cor-rodape: #AFAF8F;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: var(--texto-principal);
+}
+body{
+    background-image: linear-gradient(to left, rgb(42, 42, 42), black);
+}
+nav{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px;
+}
+
+.menu_contato{
+    background-color: var(--botao-hover);
+}
+
+.botao{
+    background-color: var(--vermelho-netflix);
+    text-decoration: none;
+}
+
+.botao_entrar{
+    
+    margin: 0px 0px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.botao:hover{
+    background-color: var(--botao-hover);
+}
+
+aside{
+    justify-self: end;
+    align-self: center;
+}
+.menu{
+    background-color: var(--vermelho-netflix);
+    padding: 0px;
+    margin: 100px 10px 20px 0px;
+    width: 80%;
+    border-radius: 5px;
+    list-style: none;
+}
+
+ul li{
+    padding: 5px;
+}
+
+header nav aside ul li a{
+    text-decoration: none;
+}
+
+header nav aside ul li:hover{
+    background-color: var(--botao-hover);
+}
+
+.imagem_logo_principal{
+    width: 40%;
+    min-width: 150px;
+    margin: 20px 10px;
+    grid-area: logo;
+}
+
+input{
+    color: black;
+}
+fieldset{
+    border: 2px solid black;
+    padding: 20px;
+
+}
+.titulo_form{
+    text-align: center;
+    background-color: black;
+    padding: 8px;
+    border-radius: 5px;
+}
+.contato{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 90px;
+    height: 100vh;
+}
+
+form{
+    background-color: #E50914;
+    padding: 30px;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+legend{
+    margin: 10px;
+}
+
+.container_input{
+    position: relative;
+    
+}
+
+.input_usuario{
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    color:var(--texto-principal);
+    font-size: 20px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.label_usuario{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input_usuario:focus ~.label_usuario,
+.input_usuario:valid ~.label_usuario{
+    top: -20px;
+    font-size: 15px;
+    color: black;
+}
+
+#nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.input_botao{
+    width: 49%;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.rodape{
+    margin-top: 50px;
+    text-align: center;
+    height: 250px;
+}
+
+footer img{
+    margin: 20px 0px;
+    width: 20%;
+}
+
+.rodape_lista{
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: center;
+}
+.class_link{
+    color: var(--cor-rodape);
+    font-size: 20px;
+    padding: 0 30px;
+}
+
+.rodape_texto{
+    margin-top: 25px;
+    color: var(--cor-rodape);
+    font-size: 20px;
+}

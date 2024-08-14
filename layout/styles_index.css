@@ -1,0 +1,187 @@
+:root{
+    --vermelho-netflix: #E50914;
+    --texto-principal: #FFFFFF;
+    --botao-hover: #810208;
+    --cor-rodape: #AFAF8F;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: var(--texto-principal);
+}
+body{
+    background-color: #000000;
+}
+nav{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px;
+}
+
+.botao{
+    background-color: var(--vermelho-netflix);
+    text-decoration: none;
+}
+
+.botao_entrar{
+    
+    margin: 0px 0px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.botao:hover{
+    background-color: var(--botao-hover);
+}
+
+aside{
+    justify-self: end;
+    align-self: center;
+}
+.menu{
+    background-color: var(--vermelho-netflix);
+    padding: 0px;
+    margin: 100px 10px 20px 0px;
+    width: 80%;
+    border-radius: 5px;
+    list-style: none;
+}
+.menu_home{
+    background-color: var(--botao-hover);
+}
+
+ul li{
+    padding: 5px;
+}
+
+header nav aside ul li a{
+    text-decoration: none;
+}
+
+header nav aside ul li:hover{
+    background-color: var(--botao-hover);
+}
+
+.imagem_logo_principal{
+    width: 40%;
+    min-width: 150px;
+    margin: 20px 10px;
+    grid-area: logo;
+}
+
+.principal{
+    background-image: url(../img/fundo_inicio_mundoTec.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+.container{
+    height: 100vh;
+}
+
+header section{
+    text-align: center;
+    justify-items: center;
+    margin-top: 100px;
+}
+section h1{
+    font-size: 45px;
+}
+
+section p{
+    font-size: 25px;
+    margin: 30px 0px 50px 0px;
+
+}
+
+.botao_contato{
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.secundario{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 480px;
+    border-block-end: 10px solid #232323;
+}
+.container__descricao{
+    padding: 100px 30px;
+}
+
+.secundario__imagem{
+    width: 60%;
+    min-width: 300px;
+    justify-self: center;
+    align-self: center;
+}
+
+.descricao__titulo{
+    font-size: 35px;
+}
+
+.descricao__texto{
+    font-size: 25px;
+}
+
+.botao_cadastro{
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+.dispositivos_lista{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    list-style-type: none;
+    margin: 3em 0;
+}
+
+.dispositivos{
+    text-align: center;
+    border-block-end: 10px solid #232323;
+    padding: 0px 0px 50px 0;
+}
+
+.dispositivos_titulo{
+    font-size: 30px;
+    padding-top: 35px;
+}
+
+.lista_item{
+    font-size: 32px;
+}
+
+.duvida_titulo{
+    margin: 60px;
+}
+
+.rodape{
+    text-align: center;
+    height: 250px;
+}
+
+footer img{
+    margin: 20px 0px;
+    width: 20%;
+}
+
+.rodape_lista{
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: center;
+}
+.class_link{
+    color: var(--cor-rodape);
+    font-size: 20px;
+    padding: 0 30px;
+}
+
+.rodape_texto{
+    margin-top: 25px;
+    color: var(--cor-rodape);
+    font-size: 20px;
+}

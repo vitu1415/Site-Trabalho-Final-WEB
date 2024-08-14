@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MT - conta</title>
+        <link rel="stylesheet" href="../layout/styles_contato.css">
+        <link rel="shortcut icon" type="imagex/png" href="../img/favicon.ico">
+    </head>
+    <body>
+        <header class="principal container">
+            <nav>
+                <a href="../index.html"><img src="/img/logo_mundotec.png" class="imagem_logo_principal"></a>
+                <aside>
+                    <ul class="menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li class="menu_contato"><a href="contato.html">Contato</a></li>
+                        <li><a href="planos.html">Planos</a></li>
+                    </ul>
+                    <a href="paginas/login.html" class="botao botao_entrar">Entrar</a>
+                </aside>
+            </nav>
+        </header>
+        <section class="contato">
+            <form>
+                <fieldset>
+                    <legend class="titulo_form">
+                        <h1>contato</h1>
+                    </legend>
+                    <legend class="container_input">
+                        <input type="text" name="nome" id="nome" class="input_usuario" required>
+                        <label for="nome" class="label_usuario">Nome Completo</label>
+                    </legend>
+                    <br>
+                    <legend class="container_input">
+                        <input type="text" name="email" id="email" class="input_usuario" required><!--Não consegui colocar a type="email", pq não estava ficando alinhado do jeito que queria (espero q entenda)-->
+                        <label for="text" class="label_usuario">Email</label>
+                    </legend class="container_input">
+                    <br>
+                    <legend class="container_input">
+                        <input type="tel" name="tel" id="tel" class="input_usuario" required>
+                        <label for="tel" class="label_usuario">Numero</label>
+                    </legend>
+                    <br>
+                    <legend class="container_input">
+                        <label for="nascimento">Data de nascimento:</label>
+                        <input type="date" name="nascimento" id="nascimento" class="data_nascimento">
+                    </legend>
+                    <br>
+                    <legend>
+                        <label for="sexo">Sexo:</label>
+                        <br>
+                        <input type="radio" id="masculino" name="sexo">
+                        <label for="masculino">Masculino</label>
+                        <br>
+                        <input type="radio" id="feminino" name="sexo">
+                        <label for="feminino">Feminino</label>
+                    </legend>
+                    <br>
+                    <input type="submit" name="enviar" id="enviar" class="input_botao">
+                    <input type="reset" name="limpar" id="limpar" value="Limpar" class="input_botao">
+                </fieldset>
+            </form>
+        </section>
+        <footer class="rodape container_conteudo">
+            <img src="../img/logo_mundotec.png" alt="logo da mundoTec">
+            <ul class="rodape_lista">
+                <li>
+                    <a href="../index.html" class="class_link">home</a>
+                </li>
+                <li>
+                    <a href="catalogo.html" class="class_link">catálogo</a>
+                </li>
+                <li>
+                    <a href="planos.html" class="class_link">planos</a>
+                </li>
+                <li>
+                    <a href="contato.html" class="class_link">contato</a>
+                </li>
+                <li>
+                    <a href="login.html" class="class_link">conta</a>
+                </li>
+            </ul>
+            <p class="rodape_texto">MundoTec Brasil</p>
+        </footer>
+    </body>
+</html>
