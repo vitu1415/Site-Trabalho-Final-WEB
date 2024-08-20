@@ -16,7 +16,8 @@ body{
 nav{
     display:grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100px;
+    grid-template-areas: 'logo aside';
+    grid-template-rows: 150px;
 }
 
 .botao{
@@ -24,51 +25,54 @@ nav{
     text-decoration: none;
 }
 
-.botao_entrar{
-    
-    margin: 0px 0px;
-    padding: 10px 25px;
-    border-radius: 5px;
-    margin-right: 20px;
-}
-
 .botao:hover{
     background-color: var(--botao-hover);
 }
 
-aside{
-    justify-self: end;
-    align-self: center;
-}
-.menu{
-    background-color: var(--vermelho-netflix);
-    padding: 0px;
-    margin: 100px 10px 20px 0px;
-    width: 80%;
-    border-radius: 5px;
-    list-style: none;
-}
-.menu_home{
-    background-color: var(--botao-hover);
-}
-
-ul li{
-    padding: 5px;
-}
-
-header nav aside ul li a{
-    text-decoration: none;
-}
-
-header nav aside ul li:hover{
-    background-color: var(--botao-hover);
-}
-
 .imagem_logo_principal{
+    grid-area: logo;
     width: 40%;
     min-width: 150px;
     margin: 20px 10px;
-    grid-area: logo;
+}
+
+aside{
+    grid-area: aside;
+    justify-self: end;
+}
+
+.menu{
+    margin: 20px;
+    list-style: none;
+}
+
+.conteudo_dropdown a{
+    text-decoration: none;
+}
+.img_menu img{
+    min-height: 50px;
+    max-width: 60px;
+}
+
+.dropdown{
+    display: none;
+    margin-right: 10px;
+}
+
+.conteudo_dropdown{
+    background-color: var(--vermelho-netflix);
+    padding: 10px;
+}
+
+.conteudo_dropdown:hover{
+    background-color: var(--botao-hover);
+}
+
+.img_menu:hover .dropdown{
+    display: block;
+}
+.img_menu:hover .menu_home{
+    background-color: var(--botao-hover);
 }
 
 .principal{
@@ -82,19 +86,18 @@ header nav aside ul li:hover{
     height: 100vh;
 }
 
-header section{
+.conteudo_titulo{
     text-align: center;
     justify-items: center;
     margin-top: 100px;
 }
-section h1{
+.conteudo_titulo h1{
     font-size: 45px;
 }
 
-section p{
+.conteudo_titulo p{
     font-size: 25px;
     margin: 30px 0px 50px 0px;
-
 }
 
 .botao_contato{
@@ -114,7 +117,8 @@ section p{
 
 .secundario__imagem{
     width: 60%;
-    min-width: 300px;
+    max-width: 350px;
+    min-width: 275px;
     justify-self: center;
     align-self: center;
 }
@@ -125,37 +129,12 @@ section p{
 
 .descricao__texto{
     font-size: 25px;
+    margin: 20px 0 40px 0;
 }
 
-.botao_cadastro{
+.botao_catalogo{
     padding: 15px 30px;
     border-radius: 5px;
-}
-
-.dispositivos_lista{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    list-style-type: none;
-    margin: 3em 0;
-}
-
-.dispositivos{
-    text-align: center;
-    border-block-end: 10px solid #232323;
-    padding: 0px 0px 50px 0;
-}
-
-.dispositivos_titulo{
-    font-size: 30px;
-    padding-top: 35px;
-}
-
-.lista_item{
-    font-size: 32px;
-}
-
-.duvida_titulo{
-    margin: 60px;
 }
 
 .rodape{

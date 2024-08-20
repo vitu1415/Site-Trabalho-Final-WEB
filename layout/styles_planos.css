@@ -83,87 +83,47 @@ aside{
     background-color: var(--botao-hover);
 }
 
-input{
-    color: black;
-}
-fieldset{
-    border: 2px solid black;
-    padding: 20px;
-
-}
-.titulo_form{
-    text-align: center;
-    background-color: black;
-    padding: 8px;
-    border-radius: 5px;
-}
-.contato{
+main{
+    margin-top: 75px;
     display: grid;
-    align-items: center;
     justify-items: center;
-    margin-top: 90px;
-    height: 100vh;
 }
 
-form{
-    background-color: #E50914;
-    padding: 30px;
+.lista_beneficios img{
+    width: 15px;
+}
+.card_planos{
+    background-color: var(--vermelho-netflix);
+    padding: 20px 5px;
     border-radius: 10px;
-    border: 5px solid black;
+    margin: 25px;
+    border: solid 2px black;
+    width: 50%;
 }
 
-legend{
-    margin: 10px;
+.lista_beneficios{
+    list-style: none;
 }
 
-.container_input{
-    position: relative;
-    
+.valor{
+    text-align: center;
+    font-size: 45px;
+    color: #000000;
+    margin: 0 0 30px 0;
 }
 
-.input_usuario{
-    background: none;
-    border: none;
-    border-bottom: 1px solid black;
-    outline: none;
-    color:var(--texto-principal);
-    font-size: 20px;
-    width: 100%;
-    letter-spacing: 1px;
+.compra{
+    text-align: center;
 }
 
-.label_usuario{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    pointer-events: none;
-    transition: .5s;
+.botao_compra{
+    text-decoration: none;
+    padding: 15px 40px;
+    background-color: #000000;
 }
 
-.input_usuario:focus ~.label_usuario,
-.input_usuario:valid ~.label_usuario{
-    top: -20px;
-    font-size: 15px;
-    color: black;
-}
-
-#nascimento{
-    border: none;
-    padding: 8px;
-    border-radius: 10px;
-    outline: none;
-    font-size: 15px;
-}
-
-.input_botao{
-    width: 49%;
-    border: none;
-    background-color: black;
-    color: white;
-    padding: 15px;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 5px;
+.botao_compra:hover{
+    background-color: #353535;
 }
 
 .rodape{

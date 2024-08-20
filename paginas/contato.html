@@ -6,6 +6,7 @@
         <title>MT - conta</title>
         <link rel="stylesheet" href="../layout/styles_contato.css">
         <link rel="shortcut icon" type="imagex/png" href="../img/favicon.ico">
+        <script src="../script/contato.js"></script>
     </head>
     <body>
         <header class="principal container">
@@ -13,12 +14,17 @@
                 <a href="../index.html"><img src="/img/logo_mundotec.png" class="imagem_logo_principal"></a>
                 <aside>
                     <ul class="menu">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="catalogo.html">Catálogo</a></li>
-                        <li class="menu_contato"><a href="contato.html">Contato</a></li>
-                        <li><a href="planos.html">Planos</a></li>
+                        <li class="img_menu"><img src="../img/barra-de-menu.png">
+                        <section class="dropdown">
+                            <li class="conteudo_dropdown"><a href="../index.html">Home</a></li>
+                            <li class="conteudo_dropdown"><a href="catalogo.html">Catálogo</a></li>
+                            <li class="menu_home conteudo_dropdown"><a href="contato.html">Contato</a></li>
+                            <li class="conteudo_dropdown">
+                                <a href="planos.html">Planos</a>
+                            </li>
+                        </section>
+                    </li>
                     </ul>
-                    <a href="paginas/login.html" class="botao botao_entrar">Entrar</a>
                 </aside>
             </nav>
         </header>
@@ -58,8 +64,11 @@
                         <label for="feminino">Feminino</label>
                     </legend>
                     <br>
-                    <input type="submit" name="enviar" id="enviar" class="input_botao">
-                    <input type="reset" name="limpar" id="limpar" value="Limpar" class="input_botao">
+                    <button type="button" name="enviar" id="enviar" class="input_botao" onclick="funcaoContato(this.form)">Enviar</button>
+                    <button type="reset" name="limpar" id="limpar" class="input_botao">Limpar</button>
+                    <br>
+                    <br>
+                    <p id="resul"></p>
                 </fieldset>
             </form>
         </section>
