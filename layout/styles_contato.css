@@ -102,7 +102,7 @@ fieldset{
     align-items: center;
     justify-items: center;
     margin-top: 90px;
-    height: 100vh;
+    max-height: 100vh;
 }
 
 form{
@@ -168,7 +168,7 @@ legend{
 
 .rodape{
     border-top: solid 5px #E50914;
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
     height: 250px;
 }
