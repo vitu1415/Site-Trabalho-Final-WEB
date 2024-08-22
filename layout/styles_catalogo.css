@@ -68,14 +68,6 @@ aside{
     background-color: var(--botao-hover);
 }
 
-.img_menu{
-    background-color: wheat;
-}
-
-.img_menu:hover{
-    background-color: var(--vermelho-netflix);
-}
-
 .img_menu:hover .dropdown{
     display: block;
 }

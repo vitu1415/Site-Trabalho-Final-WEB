@@ -64,14 +64,6 @@ aside{
     padding: 10px;
 }
 
-.img_menu{
-    background-color: wheat;
-}
-
-.img_menu:hover{
-    background-color: var(--vermelho-netflix);
-}
-
 .conteudo_dropdown:hover{
     background-color: var(--botao-hover);
 }
@@ -104,7 +96,7 @@ main{
 .card_planos article h1{
     text-align: center;
     margin: 0 0 10px 0;
-    font-size: 30px;
+    font-size: 35px;
     color: black;
 }
 

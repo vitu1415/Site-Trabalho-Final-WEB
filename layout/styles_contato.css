@@ -64,14 +64,6 @@ aside{
     padding: 10px;
 }
 
-.img_menu{
-    background-color: wheat;
-}
-
-.img_menu:hover{
-    background-color: var(--vermelho-netflix);
-}
-
 .conteudo_dropdown:hover{
     background-color: var(--botao-hover);
 }
