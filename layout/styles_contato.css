@@ -195,3 +195,13 @@ footer img{
     color: var(--cor-rodape);
     font-size: 20px;
 }
+
+@media (max-width: 767px){
+    .rodape_lista{
+        display: grid;
+        list-style-type: none;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50px 50px;
+        justify-content: center;
+    }
+}

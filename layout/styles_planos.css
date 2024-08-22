@@ -98,11 +98,26 @@ main{
     border-radius: 10px;
     margin: 25px;
     border: solid 2px black;
-    width: 50%;
+    width: 60%;
 }
 
+.card_planos article h1{
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    color: black;
+}
+
+.descricao{
+    font-size: 17px;
+}
 .lista_beneficios{
     list-style: none;
+    font-size: 19px;
+}
+
+.lista_beneficios li{
+    padding: 5px 0;
 }
 
 .valor{
@@ -154,4 +169,17 @@ footer img{
     margin-top: 25px;
     color: var(--cor-rodape);
     font-size: 20px;
+}
+
+@media (max-width: 767px){
+    .rodape_lista{
+        display: grid;
+        list-style-type: none;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50px 50px;
+        justify-content: center;
+    }
+    .lista_beneficios{
+        font-size: 15px;
+    }
 }

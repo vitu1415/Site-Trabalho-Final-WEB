@@ -132,7 +132,7 @@ aside{
     margin: 20px 0 40px 0;
 }
 
-.botao_catalogo{
+.botao_home{
     padding: 15px 30px;
     border-radius: 5px;
 }
@@ -163,4 +163,20 @@ footer img{
     margin-top: 25px;
     color: var(--cor-rodape);
     font-size: 20px;
+}
+
+@media (max-width: 767px){
+    .secundario{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 400px;
+        border-block-end: 10px solid #232323;
+    }
+    .rodape_lista{
+        display: grid;
+        list-style-type: none;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50px 50px;
+        justify-content: center;
+    }
 }
