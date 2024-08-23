@@ -48,6 +48,7 @@ aside{
 
 .conteudo_dropdown a{
     text-decoration: none;
+    padding: 5px 10px;
 }
 .img_menu img{
     min-height: 50px;
